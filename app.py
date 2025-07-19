@@ -11,10 +11,11 @@ API_PASSWORD  = os.getenv("EXCHANGE_API_PASSWORD")   # ← Bitget 的 Passphrase
 SECURITY_KEY  = os.getenv("SECURITY_KEY")            # TradingView 验证密钥
 
 exchange = ccxt.bitget({
-    "apiKey": API_KEY,
-    "secret": API_SECRET,
-    "password": API_PASSWORD,
-}).swap()
+    'apiKey': API_KEY,
+    'secret': API_SECRET,
+    'password': API_PASSWORD
+})
+
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
