@@ -16,7 +16,7 @@ exchange = ccxt.bitget({
     "secret":   API_SECRET,
     "password": API_PASSWORD,
     "options":  {"defaultType": "swap"},
-    "hostname": "api.bitgetapi.com" 
+    "hostname": "bitgetapi.com" 
 })
 exchange.load_markets()                               # 预加载市场表
 
